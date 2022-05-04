@@ -1,0 +1,19 @@
+package modelo;
+import java.util.Scanner;
+
+public class Ex07 {
+	public static Scanner leia;
+	public static void main (String[]args) {
+		
+		leia = new Scanner(System.in);
+		
+		float massa,densidade,volume;
+		
+		System.out.print("qual é a massa da barra:?");
+		massa = leia.nextFloat();
+		System.out.print("");
+		
+		densidade = massa / volume;
+	}
+
+}

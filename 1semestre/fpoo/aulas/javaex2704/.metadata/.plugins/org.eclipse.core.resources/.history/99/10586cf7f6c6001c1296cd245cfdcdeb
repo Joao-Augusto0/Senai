@@ -1,0 +1,28 @@
+package controle;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class processa {
+	
+	public static ArrayList<modelo.Usuarios> usuarios = new ArrayList<>();
+	private static DAO d = new DAO(); 
+
+	public static void carregar()  {
+		usuarios = d.abrir();
+	}
+	
+	public static int checarUsuario (String email){
+		int retorno = -1;
+		for (int i =0; i < usuarios.size(); i++) {
+			if(usuarios.get(i).getEmail().equals(email)) {
+				retorno = i;
+			}
+		}
+		return retorno;
+	}
+	
+	public static boolean checarSenha(int indice,String senha){		
+		return usuarios.get(indice).getSenha().equals(senha);
+	}
+}

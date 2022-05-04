@@ -1,0 +1,11 @@
+package visao;
+
+import java.util.Scanner;
+
+public class Menu {
+	private static Scanner leia;
+	
+	private veiculos[] = new Veiculo[10];
+	
+
+}

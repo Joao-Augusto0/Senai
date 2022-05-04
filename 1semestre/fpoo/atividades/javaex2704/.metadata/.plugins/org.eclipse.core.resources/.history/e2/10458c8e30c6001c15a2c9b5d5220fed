@@ -1,0 +1,18 @@
+package modelo;
+
+import java.util.Random;
+
+public class Aleatorio {
+
+	Random random = new Random();
+
+	
+	public Aleatorio(String entrada) {
+		int numero = random.nextInt(10);
+		
+	}
+	
+	public String toString() {
+	
+	}
+}

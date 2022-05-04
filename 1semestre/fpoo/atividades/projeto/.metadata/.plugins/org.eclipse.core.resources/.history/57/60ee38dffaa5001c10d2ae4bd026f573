@@ -1,0 +1,26 @@
+package modelo;
+
+import java.sql.Date;
+
+public class Aluno {
+
+	public int ra;
+	public String nome;
+	public Date nascimento;
+	public static Nota notas[] = new Nota[4];
+	
+	
+ public int calcIdade() {
+	
+}
+
+public String obterConceito() {
+	
+}
+
+public String paraString() { 
+	return  ra + "\t" + nome + "\t" + nascimento + "\t" + notas + "\t";
+}
+
+}
+	

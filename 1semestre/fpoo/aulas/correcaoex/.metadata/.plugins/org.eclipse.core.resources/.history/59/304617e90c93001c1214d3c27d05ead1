@@ -1,0 +1,42 @@
+package modelo;
+
+import java.util.Scanner;
+
+class Vetores2 {
+	
+
+	public static void main(String[] args) {
+		int[] idade = levetor();	
+		mostra(idade);
+		int maioridade = maiorIdade(idade);
+		System.out.print("A maior idade é:"+ maioridade);
+	}
+	
+	public static int[] leVetor() {
+		
+		public static void mostra(int[] vetorParaImprimir) {
+			
+			public static int maiorIdade(int[] vetorParaCalcular) {
+				int maioridade =0;
+				
+		for(int i = 0; i < vetorParaCalcular.length; i++) {
+			System.out.print(vetorParaCalcular[i] > maioridade);
+			
+		
+		}
+		
+		return leVetor;
+	}
+	
+	public static void
+
+	}
+}
+public static int maiorIdade() vetorParaCalcular {
+	for(int i = 0; u <vetorParaCalcular; i++) {
+		if(vetorParaCalcular[i] > maioridade) {
+			maioridade = vetorParaCalcular[i];
+		}
+	}
+	return maiorIdade;
+}

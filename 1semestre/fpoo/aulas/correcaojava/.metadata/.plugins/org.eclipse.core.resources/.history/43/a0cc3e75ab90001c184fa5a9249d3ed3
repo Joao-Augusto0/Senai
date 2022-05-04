@@ -1,0 +1,33 @@
+package modelo;
+
+public class Vetor {
+
+	public static void main(String[] args) {
+	
+	}
+	
+	public static void imprimirvetor() {;
+		
+		String nome[]= new String[4];
+		nome[0] = "Bruno";
+		nome[1] = "Filipe";
+		nome[2] = "lilia";
+		nome[3] = "carlos";
+	
+		String  sobrenome[] = new String[4];
+		sobrenome[0] = "fdsaf";
+		sobrenome[1] = "dasdsa";
+		sobrenome[2] = "fsdf";
+		sobrenome[3] = "msfd";
+		
+		int[] numero = new int[3];
+		numero[1] = -2; 
+				
+		for(int i =0; i < 4; i++) {
+				System.out.println(nome[i]);
+				System.out.println(sobrenome[1]);
+				
+				
+			}
+	}
+}

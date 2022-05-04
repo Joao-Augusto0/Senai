@@ -1,0 +1,13 @@
+package modelo;
+
+public class Contato {
+
+	public String none;
+	public int idade;
+	public String id;
+	public String telefone;
+	public String contatoTab() {
+		return id+"\t"+none+"\t"+idade+"\t"+telefone;
+		
+	}
+}

@@ -1,0 +1,18 @@
+package modelo;
+
+public class Vetores2 {
+
+	public static void main(String[] args) {
+		int[] idade = new int[5];
+		
+		System.out.print(demonstracao());
+	
+	}
+
+	public static int demonstracao() {
+		int x= 10;
+		
+		return x;
+	}
+	
+}

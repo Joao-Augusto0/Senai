@@ -1,0 +1,33 @@
+package controle;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.util.ArrayList;
+
+import modelo.Pessoas;
+
+public class DAO {
+	
+	private BufferedReader br;
+	private BufferedWriter bw;
+	
+	private String entrada = "C:\\Users\\DESENVOLVIMENTO\\Desktop\\Nova atividade java 2704\\desafios1\\dados\\Entrada.csv";
+	private String saida = "C:\\Users\\DESENVOLVIMENTO\\Desktop\\Nova atividade java 2704\\desafios1\\dados\\Saida.csv";
+	
+	public ArrayList<Pessoas> abrir() {
+		
+		ArrayList<Pessoas> linhas = new ArrayList<>();
+		Pessoas p;
+		
+		return null;
+	}
+
+	public void salvarname(ArrayList<Pessoas> linhas) {
+		
+	}
+
+	public void salvardata(ArrayList<Pessoas> linhas) {
+		
+	}
+
+}

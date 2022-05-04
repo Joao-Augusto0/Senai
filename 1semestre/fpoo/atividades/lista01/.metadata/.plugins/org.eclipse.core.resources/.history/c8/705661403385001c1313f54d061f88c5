@@ -1,0 +1,19 @@
+package modelo;
+
+import java.util.Scanner;
+
+public class Ex10 {
+public static Scanner leia;
+
+	public static void main(String[] args) {
+
+	
+		leia = new Scanner(System.in);
+		
+		float  q = 0,reais;
+				
+		reais = (130/10) * q;
+				
+		System.out.printf("o valor dos ngc é: %2.f",reais);
+		}
+}

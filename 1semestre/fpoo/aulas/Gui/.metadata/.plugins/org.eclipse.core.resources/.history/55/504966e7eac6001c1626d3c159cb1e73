@@ -1,0 +1,23 @@
+package visao;
+
+import java.util.Scanner;
+
+import controle.UsuarioProcessa;
+
+
+public class TesteConsole {
+
+	private static Scanner leia = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+
+		UsuarioProcessa.carregar();
+		System.out.println("digite o email");
+		if (UsuarioProcessa.checarEmail(leia.next() != -1){
+			
+		}else {
+			System.out.println("usuario não encontrado");
+		}
+	}
+
+}

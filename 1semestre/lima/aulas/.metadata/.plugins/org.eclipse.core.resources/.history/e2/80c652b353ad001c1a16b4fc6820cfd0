@@ -1,0 +1,28 @@
+package aulinhas;
+
+import java.util.Scanner;
+
+public class Ex01 {
+	public static Scanner leia;
+	
+	public static void main(String[] args) {
+		leia = new Scanner(System.in);
+		int senha;
+		boolean senha1 = false;
+		
+		while(senha1) {
+			System.out.print("digite uma senha:");
+			senha = leia.nextInt();
+		
+	
+		if(senha == 1902) {
+			System.out.println("senha correta");
+		}else {
+			System.out.println("senha incorreta");
+		}
+	
+		
+	}
+
+}
+}

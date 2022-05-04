@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\DESENVOLVIMENTO\Desktop\João Augusto Rocha Carloto 1-DES\atividade java 2704\javaex2704\.metadata\.plugins\org.eclipse.jdt.core
+1279169008.index
+2774348997.index
+3529114707.index
+1865797976.index
+760091825.index
+1012163967.index

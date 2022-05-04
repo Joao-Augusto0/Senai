@@ -1,0 +1,17 @@
+package modelo;
+
+import java.text.DecimalFormat;
+
+public class Usuarios {
+
+	private String email;
+	private String senha;
+	
+	public Alunos(String email,String senha) {
+		
+	}
+	
+	public String toString() {
+	
+	}
+}

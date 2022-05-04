@@ -1,0 +1,27 @@
+package modelo;
+
+import java.util.Scanner;
+
+public class Ex05 {
+	
+	public static Scanner leia;
+
+	public static void main(String[] args) {
+		
+		leia = new Scanner(System.in);
+		int c, al, v;
+		int t = 18;
+		
+		System.out.print("quantos caminhões sua fazenda tem?:");
+		c = leia.nextInt();
+		
+		System.out.print("digite quantos alqueires sua fazenda possui?:");
+		al = leia.nextInt();
+		
+		al = al * 250;
+		
+		System.out.print(al); 
+		
+	}
+
+}

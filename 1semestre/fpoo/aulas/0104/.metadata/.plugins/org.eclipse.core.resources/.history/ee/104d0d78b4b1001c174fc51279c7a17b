@@ -1,0 +1,32 @@
+package visao;
+
+import java.util.Scanner;
+
+public class Principal {
+	
+	private static Scanner sc = new Scanner(System.in);
+	private static menu = 0;
+	private static String[] itensMenu
+	public static void main(String[] args) {
+
+		while (menu != 5) {
+			menu = menu(itensMenu);
+			switch (menu) {
+			
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				;
+				break;
+			default:
+				System.out.println("\nOpção inválida\n");
+				break;
+			}
+		}
+	}
+		
+	}

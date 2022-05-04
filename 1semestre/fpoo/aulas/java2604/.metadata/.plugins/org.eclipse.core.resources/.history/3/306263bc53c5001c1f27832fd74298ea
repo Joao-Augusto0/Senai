@@ -1,0 +1,13 @@
+package controle;
+
+import java.util.ArrayList;
+
+import modelo.Planilha;
+
+public class ProcessaPlanilha {
+	
+	static ArrayList<Planilha> plan;
+
+}
+
+

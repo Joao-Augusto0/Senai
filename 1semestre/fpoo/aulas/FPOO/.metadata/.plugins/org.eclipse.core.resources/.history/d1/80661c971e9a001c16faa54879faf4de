@@ -1,0 +1,9 @@
+package modelo;
+
+public class Contato {
+
+	public String none;
+	public int idade;
+	public String id;
+
+}

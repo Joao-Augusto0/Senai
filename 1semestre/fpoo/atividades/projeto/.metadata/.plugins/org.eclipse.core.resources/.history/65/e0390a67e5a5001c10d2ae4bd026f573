@@ -1,0 +1,19 @@
+package modelo;
+
+public class Nota {
+
+	public String Componente;
+	public static float nota[] = new float[3];
+	
+	
+	
+	public float obterMedia() {
+		
+	}
+	
+	public String paraString() {
+		return Componente + "\t" + nota + "\t";
+	}
+	
+	
+}

@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 9vh 91vh;
+    grid-template-columns: 13% 5fr;
+    grid-template-areas: "h h"
+                         "n m";
+}
+
+header {
+    height: 100%;
+    grid-area: h;
+    background-color: green;
+    display:grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 13% 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a b c d e f g h";
+}
+
+nav {
+    height: 100%;
+    grid-area: n;
+    background-color: pink;
+    display:grid;
+    grid-template-rows:70%;
+    grid-template-columns:1fr;
+    grid-template-areas: "n" "m";
+}
+
+.nav1{
+    height: 100%;
+    grid-area: n;
+    display:grid;
+
+}
+
+.nav2{
+    height: 100%;
+    grid-area: m;
+    display:grid;
+}
+
+main {
+    height: 100%;
+    grid-area: m;
+    background-color: purple;
+}
+
+.categoria{
+    height: 25%;
+    display:grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a b c d e f g h";
+    margin-bottom:2%;
+}
+
+.a1{
+    height: 100%;
+    grid-area:a;
+    margin: 0 0 0 2%;
+}
+.a2{
+    height: 100%;
+    grid-area:b;
+    margin: 0 2% 0 2%;
+}
+.a3{
+    height: 100%;
+    grid-area:c;
+}
+.a4{
+    height: 100%;
+    grid-area:d;
+    margin: 0 2% 0 2%;
+}
+.a5{
+    height: 100%;
+    grid-area:e;
+}
+.a6{
+    height: 100%;
+    grid-area:f;
+    margin: 0 2% 0 2%;
+}
+.a7{
+    height: 100%;
+    grid-area:g;
+}
+.a8{
+    height: 100%;
+    grid-area:h;
+    margin: 0 2% 0 2%;
+}
+
+.menu{
+    height: 71%;
+    display:grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: "a b";
+}
+
+.menu1{
+    height: 100%;
+    grid-area: a;
+    display:grid;
+    grid-template-rows: 5vh ;
+    grid-template-columns: 1fr 1fr;
+}
+
+.b1{
+    height: 100%;
+}
+
+.b2{
+    height: 100%;
+}
+
+.b3{
+    height: 100%;
+}
+.b4{
+    height: 100%;
+}
+.b5{
+    height: 100%;
+}
+.b6{
+    height: 100%;
+}
+.b7{
+    height: 100%;
+}
+.b8{
+    height: 100%;
+}
+
+.menu2{
+    height: 100%;
+    grid-area:b;
+    display:grid;
+    grid-template-rows: 5vh;
+    grid-template-columns:1fr 1fr;
+}
+
+.c1{
+    height: 100%;
+}
+.c2{
+    height: 100%;
+}
+.c3{
+    height: 100%;
+}
+.c4{
+    height: 100%;
+}
+.c5{
+    height: 100%;
+}
+.c6{
+    height: 100%;
+}
+.c7{
+    height: 100%;
+}
+.c8{
+    height: 100%;
+}

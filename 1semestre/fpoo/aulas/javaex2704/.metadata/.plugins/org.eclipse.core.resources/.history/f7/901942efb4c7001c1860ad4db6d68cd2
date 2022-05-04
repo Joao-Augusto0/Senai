@@ -1,0 +1,52 @@
+package controle;
+
+import java.io.BufferedReader; 
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import modelo.Usuarios;
+
+public class UsuarioDao {
+	
+	private BufferedReader br;	
+	private String path = "C:\\Users\\DESENVOLVIMENTO\\Desktop\\Gui\\Login\\dados\\usuarios.csv";
+	
+	public ArrayList<Usuarios> abrir(){
+		ArrayList<Usuarios> linhas = new ArrayList<Usuarios>();
+		Usuarios usuario;
+
+		try {	
+			br = new BufferedReader(new FileReader(path));
+			 String linha = br.readLine();
+			while(linha != null) {
+				usuario = new Usuarios(linha);
+				linhas.add(usuario);
+				linha = br.readLine();
+			}
+		} catch(FileNotFoundException e) {
+			System.out.println(e);
+		}catch(IOException e) {
+			System.out.println(e);
+		}
+		return lista;
+	}
+
+	public void salvar(ArrayList<Usuarios> linhas) {
+		try {
+			
+			bw = new BufferedWriter(new FileWriter(saida));
+			for (Usuarios u : linhas) {
+				bw.write(u.toString()+"\r\n");
+			}
+			
+			bw.close();
+		}catch(IOException e) {
+			
+			e.printStackTrace();
+		}
+	}
+}

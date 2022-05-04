@@ -1,0 +1,17 @@
+package controle;
+
+import java.io.BufferedReader;
+import java.util.ArrayList;
+
+import modelo.Usuarios;
+public class UsuarioDao {
+	
+	private BufferedReader br;
+	private String path = "C:\\Users\\DESENVOLVIMENTO\\Desktop\\Gui\\Login\\dados\\usuarios.csv";
+
+	public ArrayList<Usuarios> abrir(){
+		ArrayList<Usuarios> lista = new ArrayList<Usuarios>();
+		Usuarios usuario;
+		return null;
+	}
+}

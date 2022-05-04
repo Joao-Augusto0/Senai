@@ -1,0 +1,23 @@
+package aula14;
+
+import java.util.Scanner;
+
+public class Aula14 {
+	public static Scanner leia;
+	public static void main(String[] args) {
+
+		leia = new Scanner(System.in);
+
+		System.out.print("digite um valor");
+		int i = leia.nextInt();
+		
+		System.out.print("digite outro valor:");
+		int n = leia.nextInt();
+		
+		for(int c = 0; c < i; c+= 2) {
+			System.out.println(i);
+			c+=2;
+		}
+		
+}
+	}

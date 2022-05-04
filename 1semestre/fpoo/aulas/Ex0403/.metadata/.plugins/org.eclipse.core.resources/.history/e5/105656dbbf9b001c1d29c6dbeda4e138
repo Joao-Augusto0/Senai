@@ -1,0 +1,42 @@
+package modelo;
+  
+import java.util.Random;
+import java.util.Scanner;
+
+public class Ex1 {
+
+	public static Scanner leia;
+	
+	public static void main(String[] args) {
+		
+		leia = new Scanner(System.in);
+		
+		System.out.println("qual exercicio quer fazer?:");
+		int ex = leia.nextInt();
+		
+		while(ex !=3) {
+			exercicios();
+			ex = leia.nextInt();
+			
+			switch (ex) {
+			
+			case 1:
+				exercicio1();
+			break;
+			
+			case 2:
+				exercicio2();
+			break;
+			
+			default
+				System.out.print("digitou errado");
+				
+				
+			}
+		}
+		
+		
+	
+	}
+	
+}

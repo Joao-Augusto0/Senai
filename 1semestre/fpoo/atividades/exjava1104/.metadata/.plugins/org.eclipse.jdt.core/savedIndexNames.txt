@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\jaugu\Desktop\João Augusto Rocha Carloto 1 - DES\.metadata\.plugins\org.eclipse.jdt.core
+1597180709.index
+1865797976.index
+3714639840.index
+760091825.index

@@ -1,0 +1,20 @@
+package modelo;
+
+public class Cao extends Animal{
+
+	private int qtdMotoqueirosAtacados;
+
+	public Cao(String especie,String nome, float peso,String raça,int qtdMotoqueirosAtacados) {
+		super(especie,nome,peso,raça);
+		this.qtdMotoqueirosAtacados = qtdMotoqueirosAtacados;	
+	}
+	@Override
+	public String toString() {
+		return "Cao [qtdMotoqueirosAtacados=" + qtdMotoqueirosAtacados + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
+		
+	}
+	
+	
+
+}

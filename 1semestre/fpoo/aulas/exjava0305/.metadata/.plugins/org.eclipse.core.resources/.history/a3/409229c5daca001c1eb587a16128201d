@@ -1,0 +1,46 @@
+package modelo;
+
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class Pet {
+
+	private int id1;
+	private String especie1;
+	private String raça1;
+	private String nome1;
+	private Float peso1;
+	private Date nascimento1;
+	private String dono1;
+	private String telefone1;
+	private String texto1;
+	
+	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+	public Pet(int id1, String especie1, String raça1, String nome1, Float peso1, String nascimento1, String dono1,
+			String telefone1, String texto1, SimpleDateFormat sdf) throws ParseException {
+		
+		this.id1 = id1;
+		this.especie1 = especie1;
+		this.raça1 = raça1;
+		this.nome1 = nome1;
+		this.peso1 = peso1;
+		this.nascimento1 = sdf.parse(nascimento1);
+		this.dono1 = dono1;
+		this.telefone1 = telefone1;
+		this.texto1 = texto1;
+	}
+
+	public obterIdade() {
+		return new Date().getYear() - nascimento1.getYear();
+	}
+	
+	public String toString() {
+		return  id1 + "/t" + especie1 + "/t" + raça1 + "/t" + nome1 + "/t"
+				+ String.format("%.2f",peso1) + "/t" + obterIdade() + "/t" + dono1 + "/t" + telefone1;
+	}
+	
+	
+	
+}

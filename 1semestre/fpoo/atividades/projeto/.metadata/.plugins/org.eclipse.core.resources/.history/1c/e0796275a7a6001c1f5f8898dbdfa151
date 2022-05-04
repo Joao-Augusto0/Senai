@@ -1,0 +1,30 @@
+package modelo;
+import java.util.Scanner;
+import java.sql.Date;
+
+public class Aluno {
+
+	public static Scanner leia;
+	
+	public int ra;
+	public String nome;
+	public Date nascimento;
+	public Nota notas[] = new Nota[4] 
+	
+			
+ public int calcIdade() {
+	 
+}
+
+public String obterConceito() {
+
+	leia = new Scanner (System.in);
+	
+}
+
+public String paraString() { 
+	return  ra + "\t" + nome + "\t" + nascimento + "\t" + notas + "\t";
+}
+
+}
+	

@@ -1,0 +1,78 @@
+<html>
+	<head>
+	
+		<meta charset ="utf-8"/>
+		<title> Pagina com tópicos</title>
+	</head>
+	<body>
+	<p><a name="topo"></a>
+	<h2> Materias Escolares</h2>
+	<ul>
+		<li>Portugues<a  href="#Portugues"><img src="https://i.pinimg.com/originals/69/f3/a1/69f3a1814bae7a531d75722d21498a77.png" height="25px>" width="25px"/></a></li>
+		<li>Matematica<a href="#Matematica"><img src="https://i.pinimg.com/originals/69/f3/a1/69f3a1814bae7a531d75722d21498a77.png" height="25px>" width="25px"/></a></li>
+		<li>Geografia<a  href="#Geografia"><img src="https://i.pinimg.com/originals/69/f3/a1/69f3a1814bae7a531d75722d21498a77.png" height="25px>" width="25px"/></a></li>
+		<li>Historia<a   href="#Historia"><img src="https://i.pinimg.com/originals/69/f3/a1/69f3a1814bae7a531d75722d21498a77.png" height="25px>" width="25px"/></a></li>
+		<lI>Ciencias<a   href="#Ciencias"><img src="https://i.pinimg.com/originals/69/f3/a1/69f3a1814bae7a531d75722d21498a77.png" height="25px>" width="25px"/></a></li>
+			
+	</ul>
+	
+	<p/>
+	
+	<p><a name="Potugues"></a>
+		<h4>Portugues</h4>
+		<p>
+			A língua portuguesa, também designada português, é uma língua indo-europeia românica flexiva ocidental originada no galego-português falado no Reino da Galiza e no norte de Portugal. Com a criação do Reino de Portugal em 1139 e a expansão para o sul na sequência da Reconquista, deu-se a difusão da língua pelas terras conquistadas e mais
+		</p>
+	</p>	
+	
+	<hr/>
+	
+	<p><a name="Matematica"></a>
+	
+		<h4>Matematica</h4>
+		<p>
+			A matemática (dos termos gregos μάθημα, transliterado máthēma, 'ciência', conhecimento' ou 'aprendizagem';[1] e μαθηματικός, transliterado mathēmatikós, 'inclinado a aprender') é a ciência do raciocínio lógico e abstrato, que estuda quantidades (teoria dos números), espaço e medidas (geometria), estruturas, variações[2] e estatística.[3][4][5] Não há, porém, uma definição consensual por parte da comunidade científica.[6][7] O trabalho matemático consiste em procurar e relacionar padrões,[8][9] de modo a formular
+		</p>
+	</p>
+	
+	<hr/>
+	
+	<p><a name ="Geografia"></a>
+	
+		<h4>Geografia</h4>
+		<p>
+			A Geografia é uma ciência que tem por objetivo o estudo da superfície terrestre e a distribuição espacial de fenômenos significativos na paisagem. Também estuda a relação recíproca entre o homem e o meio ambiente (Geografia Humana). Para alguns a Geografia também pode ser uma prática humana de conhecer onde se vive para compreender e planejar o espaço onde se vive.
+		</p>
+	</p>
+	
+	<hr/>
+	
+	<p><a name ="Historia"></a>
+		<h4>Historia</h4>
+		<p>
+			História (do grego antigo ἱστορία, transl.: historía, que significa "pesquisa", "conhecimento advindo da investigação")[1] é a ciência que estuda o ser humano e sua ação no tempo e no espaço concomitantemente à análise de processos e eventos ocorridos no passado. O termo "História" também pode significar toda a informação do passado arquivada em todas as línguas por todo o mundo, por intermédio de registos históricos.
+		</p>
+	
+	</p>
+	
+	<hr/>
+	
+	<p><a name="Ciencias"></a>
+			<h4>Ciencias</h4>
+		<p>
+			A ciência antiga era dominada por homens, seja na China, Grécia, Índia ou no Médio Oriente. Dos séculos XVI a XX desenvolveu-se em grande parte nos países ocidentais, e continuou a ser dominada por homens — mas isso está a mudar. A ciência é um empreendimento de todo o mundo e deve ser aberto a qualquer pessoa — independentemente da etnia, sexo, religião, ou qualquer outra característica pessoal. Cada vez mais, todos os tipos de pessoas de quase todas as partes do mundo participam na ciência, e as instituições científicas estão a trabalhar para expandir a diversidade da sua comunidade. Esta diversidade é uma das chaves para a rápida taxa de progresso da ciência. Uma comunidade
+		</p>
+	
+	</p>
+	
+	<hr/>
+	<h6>Voltar ao topo<a href="#topo"><img src="setacima.png" height="30px" width="30px"></a></h6>
+	
+	<p>
+		<h6>Ir para tabela<a href="tabela.html"><img src="setacima.png" height="30px" width="30px"></h6>
+	</p>
+	
+	</body>
+	
+	
+</html>

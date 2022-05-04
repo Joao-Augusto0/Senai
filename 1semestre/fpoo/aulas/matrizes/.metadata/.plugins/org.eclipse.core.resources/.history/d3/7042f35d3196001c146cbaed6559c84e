@@ -1,0 +1,23 @@
+package modelo;
+
+import java.util.Random;
+public class Matrizes {
+
+	public static void main(String[] args) {
+		
+		int n[] = new int[27];
+		
+		Random ger = new Random();
+		
+		for(int c=0;c < 9;c++) {
+			for(int i=0;i < 9; i++) {
+				for(int j=0;j < 9;j++) {
+				
+					System.out.println("[c][i][j]= ger.nextInt()");
+				}
+			}
+		}
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\DESENVOLVIMENTO\Desktop\senai\atividades\FPOO\dia 11\.metadata\.plugins\org.eclipse.jdt.core
+760091825.index
+1865797976.index
+3551900997.index

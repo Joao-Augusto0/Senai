@@ -1,0 +1,22 @@
+package visao;
+import javax.swing.JFrame;
+
+public class Telalogin extends JFrame{
+
+	private static final long serialVersionUID = 1L;
+
+	Telalogin(){
+		setTitle("Tela de Login");
+		setBounds(0,0,300,300);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(null);
+		
+	}
+	
+	public static void main(String[] args) {
+
+		Telalogin tela = new Telalogin();
+		tela.setVisible(true);
+	}
+
+}

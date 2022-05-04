@@ -1,0 +1,17 @@
+package modelo;
+
+import java.util.Arrays;
+
+public class Aprendizado {
+	public static void main(String[] args) {
+		
+	int d[] = new int[5];
+	 
+	Arrays.fill(d,8);
+	
+	for(int v:d) {
+		System.out.println(v);
+	}
+	
+	}
+}

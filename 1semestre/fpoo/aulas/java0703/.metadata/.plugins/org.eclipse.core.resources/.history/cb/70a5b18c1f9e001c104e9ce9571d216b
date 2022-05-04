@@ -1,0 +1,21 @@
+package modelo;
+
+import java.util.Random;
+
+public class Revisao {
+
+	public static void main(String[] args) {
+
+		int[][] m = new int [5][5];
+		
+		Random r = new Random();
+		
+		for(int i = 0;i < 5;i++) {
+			
+			for(int c = 0; c <= 4; c++) {
+				m[i][c] = r.nextInt(100);
+			}
+		}
+	}
+
+}

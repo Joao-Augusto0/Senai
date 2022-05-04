@@ -1,0 +1,20 @@
+package controle;
+
+import modelo.Pet;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+
+public class PetPreocess {
+	public static ArrayList<Pet> pets = new ArrayList<>();
+	
+	static void carregarTestes() throws ParseException {
+		//limpar a lista
+		pets = new ArrayList<>();
+		//preencher com testes
+		pets.add(new Pet(1,"Cachorro","toto","vira-latas",(float) 26.5,"01/01/2000","rafael","(19)987428374"));
+		pets.add(new Pet(1,"Gato","cat","vira-cats",(float) 16.5,"02/03/2005","wyl","(19)987428374"));
+		pets.add(new Pet(1,"coelho","cenoura","vira-pig",(float) 18.5,"04/10/2010","pablo","(19)987428374"));
+		
+	}
+}

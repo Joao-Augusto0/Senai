@@ -1,0 +1,13 @@
+package modelo;
+
+public class Agenda {
+
+	 public static void main(String[] args) {
+		 //c1 é uma instãncia
+		 Contato c1 = new Contato();
+		 //c1 é um objeto
+		 c1 = new Contato();
+	 
+		 System.out.println(c1.id);
+	 }
+}

@@ -1,0 +1,43 @@
+package visao;
+
+import java.util.Scanner;
+
+public class Menu {
+	private static Scanner leia = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		int menu = 0;
+		while(menu != 6) {
+			
+			System.out.println("escolha:\n[1]cadastrar carro\n[2]listar carro\n[3]cadastar moto\n[4]listar moto");
+			menu = leia.nextInt();
+			
+			switch(menu) {
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				
+				break;
+			case 4:
+				
+				break;
+			case 5:
+				
+				break;
+			case 6:
+				
+				break;
+			default:
+				System.out.println("opção incorreta");
+				break;	
+			}
+		}
+	}
+		
+	}
+
+}

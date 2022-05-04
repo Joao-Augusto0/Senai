@@ -1,0 +1,15 @@
+package modelo;
+
+public class Pessoas {
+
+	private String nome;
+	private int ano;
+	
+	public String name() {
+		return nome;
+	}
+	
+	public int data() {
+		return  2022 - ano;
+	}
+}

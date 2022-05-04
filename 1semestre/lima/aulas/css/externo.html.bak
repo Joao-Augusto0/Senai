@@ -1,0 +1,11 @@
+<hteml>
+	<head>
+		<meta charset="utf-8"/>
+		<title> css externo</title>
+		<link rel="styleesheat" href="style/cssexterno.css"/);
+	</head>
+	<body>
+		<label>Alguma coisa</label>
+		<label class="class">
+	</body>
+</html>

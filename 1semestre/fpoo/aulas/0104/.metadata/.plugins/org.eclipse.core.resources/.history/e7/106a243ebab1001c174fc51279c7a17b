@@ -1,0 +1,38 @@
+package visao;
+
+import java.util.Scanner;
+
+public class Principal {
+	
+	private static Scanner sc = new Scanner(System.in);
+	private static int menu = 0;
+	private static String[] itensMenu = {"cadastrarCao","CadastraGato","ListarCao","ListarGato"};
+	public static void main(String[] args) {
+
+		while (menu != 5) {
+			menu = menu(itensMenu);
+			switch (menu) {
+			
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				;
+				break;
+			case 4:
+				;
+				break;
+			case 5:
+				;
+				break;
+			default:
+				System.out.println("\nOpção inválida\n");
+				break;
+			}
+		}
+	}
+		
+	}

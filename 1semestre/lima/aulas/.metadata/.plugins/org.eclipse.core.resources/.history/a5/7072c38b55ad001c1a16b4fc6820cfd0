@@ -1,0 +1,22 @@
+package aulinhas;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Ex02 {
+	public static Scanner leia;
+
+	public static void main(String[] args) {
+		leia = new Scanner(System.in);
+
+		ArrayList<Integer> array = new ArrayList<>();
+		
+		System.out.print("digite um valor maio q 0:");
+		int valor = leia.nextInt();
+		
+		while(valor > 0) {
+			valor = leia.nextInt();
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+package visao;
+
+import java.util.Scanner;
+
+public class Tela {
+	
+	static Scanner leia = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		int menu = 0;
+		
+		while(menu != 5) {
+			System.out.println("1-adicao");
+			System.out.println("2-mult");
+			System.out.println("3-sub");
+			System.out.println("4-divisao");
+			System.out.println("5-sair");
+			menu = leia.nextInt();
+		}
+		
+
+	}
+
+}

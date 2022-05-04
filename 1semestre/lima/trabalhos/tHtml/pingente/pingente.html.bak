@@ -1,0 +1,35 @@
+<html> 
+	<head>
+		<meta charset ="utf-8"/>
+		
+		<img src="pingente.jpg" height = "40%" width="100%"></>
+		<title>Pingentes</title>
+		
+	</head>
+	<body style ="background-color:rgb(255,221,185)">
+		<h1 align ="center" <font>seção de Pingentes</font></h1> 
+		<h2 align ="center"> escolha qual pingente quer comprar!</h2>
+		<hr/>
+		<h1>Preços</h1>
+		<img src="p1.png" height = "200px" width="450px"></>
+		<h2>Pingente 1:65R$</h2>
+		<hr/>
+		<img src="p2.png" height = "200px" width="450px"></>
+		<h2>Pingente 2: 30R$</h2>
+		<hr/>
+		<img src="p3.png" height = "200px" width="450px"></>
+		<h2>Pingente 3: 20R$</h2>
+		<hr/>
+		<img src="p4.png" height = "200px" width="450px"></>
+		<h2>Pingente 4: 50R$</h2>
+		<hr/>
+		
+		<h2>Um pouco de história:</h2>
+		<p>As mais antigas são aquelas feitas de ossos, dentes e pedras e etc que eram usadas como forma de “proteção”, já que antigamente as superstições eram muito maiores que hoje em dia. No Egito, as jóias eram em formas de animais mitológicos, como escaravelhos e serpentes.</p>
+		<h3>Ir para a pagina principal!<a href="../pagina principal/pagina.html"><img src="seta.png" height="30px" width="30px"></a></h3>
+
+
+		
+
+		
+</html>

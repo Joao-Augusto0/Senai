@@ -1,0 +1,24 @@
+package modelo;
+
+public class Lista2_1 {
+
+	public static void main(String[] args) {
+
+		mostra();
+		
+	}
+
+	public static void mostra () {
+		
+		int[] n = new int[5];
+	
+		num[0] = 2;
+		num[1] = 4;
+		num[2] = 5;
+		num[3] = 6;
+		num[4] = 8;
+		
+
+	
+	}
+}

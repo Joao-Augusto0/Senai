@@ -1,0 +1,52 @@
+package visao;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+import modelo.Cliente;
+import modelo.Funcionário;
+
+public class menu {
+	
+	private static Scanner leia = new Scanner(System.in);
+	private static ArrayList<Funcionário> funcionarios = new ArrayList<Funcionário>();
+	private static ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+	
+	public static void main(String[] args) {
+		int menu = 0;
+		while(menu != 6) {
+			menu = leia.nextInt();
+			
+			switch(menu) {
+			case 1:
+				cadastrarFuncionário();
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				
+				break;
+			case 4:
+				
+				break;
+			case 5:
+				
+				break;
+			case 6:
+				
+				break;
+			default:
+				System.out.println("opção incorreta");
+				break;
+				
+			}
+		}
+	}
+	
+	private static void cadastrarFuncionário(){
+		System.out.print("digite seu nome:\ttelefone:\tnascimento:");
+		
+		
+	}
+}

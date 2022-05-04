@@ -1,0 +1,15 @@
+package modelo;
+
+import java.text.DecimalFormat;
+
+public class Aleatorio {
+
+	
+	public Aleatorio(String entrada) {
+		
+	}
+	
+	public String toString() {
+	
+	}
+}

@@ -1,0 +1,17 @@
+package modelo;
+
+public class Contato {
+
+	public String none;
+	public int idade;
+	public String id;
+	public String telefone;
+	public String tabular() {
+		return id+"\t"+none+"\t"+idade+"\t"+telefone;
+		
+	}
+	public char[] contatoTab() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

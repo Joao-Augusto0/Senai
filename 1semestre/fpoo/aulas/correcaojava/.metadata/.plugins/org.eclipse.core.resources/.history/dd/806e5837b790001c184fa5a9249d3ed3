@@ -1,0 +1,73 @@
+package modelo;
+
+import java.util.Scanner;
+
+public class Ex1 {
+	public static Scanner leia;
+	public static void main(String[] args) {
+		
+		leia = new Scanner(System.in);
+		int opcao =0;
+		
+		while(opcao != 5) {
+			
+			opcao = leia.nextInt();
+			switch (opcao);
+			
+			case 1
+			
+			case 2
+			
+			case 3
+			
+			case 4
+			
+		}
+	
+	
+	}
+	public static void calcularHorasExtras() {
+		leia = new Scanner(System.in);
+		int opcao_horas = 0;
+		 
+		while(opcao_horas != 2) {
+			System.out.print("1");
+			System.out.print("");
+			opcao_horas = leia.nextInt();
+			
+			if(opcao_horas==1) {
+				System.out.print("digite quantas horas extras foram feitas:");
+				int total_horas = leia.nextInt();
+				
+				System.out.print("digite quantas horas foram trabalhadas:");
+				int hora_extras =  leia.nextInt();
+				
+				double salario = total_horas * 5.625;
+				salario = salario + (hora_extras + (5.625 * 1.75));
+				
+				
+			}
+			
+		}
+	}
+	
+	
+	
+	public static void calcularblocos() {
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	public static void mostraropçoes() { 
+		
+		String[] vetor opcoes = new String[5];
+		vetor_op
+
+	}
+
+}

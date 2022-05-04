@@ -1,0 +1,11 @@
+	body{
+			background-image: url("../img/img3.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		label{
+			color: rgb(255,255,255);
+			font-size: 30px;
+		}
+		

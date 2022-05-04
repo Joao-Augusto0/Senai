@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10vh 90vh 10vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "h h"
+                         "n m";
+}
+
+header {
+    height: 100%;
+    grid-area: h;
+    background-color: green;
+    display:grid;
+    grid-template-rows:100%;
+    grid-template-columns:1fr 2fr;
+}
+
+.h1{
+    height:100%
+}
+
+.h2{
+    height:100%
+}
+
+
+nav {
+    height: 100%;
+    grid-area: n;
+    background-color: pink;
+    display: grid;
+}
+
+input{
+    height: 100%;
+}
+
+.n1{
+    height: 100%;
+    background-color:black;
+}
+.n2{
+    height: 100%;
+}
+.n3{
+    height: 100%;
+}
+.n4{
+    height: 100%;
+}
+.n5{
+    height: 100%;
+}
+.n6{
+    height: 100%;
+}
+.n7{
+    height: 100%;
+}
+.n8{
+    height: 100%;
+}
+.n9{
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    grid-area: m;
+    background-color: purple;
+    display: grid;
+    grid-template-rows:30% 70%;
+    grid-template-columns: 1fr ;
+}
+ 
+.menu1{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.m1{
+    height:100%;
+}
+.m2{
+    height:100%;
+}
+.m3{
+    height:100%;
+}
+
+.menu2{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns:1fr 2fr;
+}
+
+.mm1{
+    height:50%;
+}
+
+.mm2{
+    height:100%;
+}

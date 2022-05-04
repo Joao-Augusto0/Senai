@@ -1,0 +1,23 @@
+package aula15;
+
+import java.util.Scanner;
+
+public class Ex01 {
+public static Scanner leia;
+	public static void main(String[] args) {
+		
+		int []m = new int[10];
+		
+		leia = new Scanner(System.in);
+		
+		System.out.println("digite 10 valores aleatorios: ");
+		int n = leia.nextInt();
+	
+		for(int i=n; i <= 10; i++) {
+			System.out.println(n);
+		}
+		
+	}
+		
+	}
+

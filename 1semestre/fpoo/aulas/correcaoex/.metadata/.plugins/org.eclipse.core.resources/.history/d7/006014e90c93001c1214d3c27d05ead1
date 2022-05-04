@@ -1,0 +1,31 @@
+package modelo;
+
+import java.util.Scanner;
+
+class Vetores2 {
+	
+
+	public static void main(String[] args) {
+		int[] idade = new int[5];
+		
+	}
+	
+	public static int[] leVetor() {
+		int[] leVetor = new int[5];
+		
+		Scanner leia = new Scanner(System.in);
+		
+		leVetor[0] = leia.nextInt();
+		leVetor[1] = leia.nextInt();
+		leVetor[2] = leia.nextInt();
+		leVetor[3] = leia.nextInt();
+		leVetor[4] = leia.nextInt();
+		
+		for(int i = 0; i < leVetor.length; i++) {
+			System.out.println("digite uma idade:");
+			leVetor[i] = leia.nextInt();
+			
+		}
+	}
+
+	}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\jaugu\Desktop\senai\1semestre\fpoo\aulas\aula4\.metadata\.plugins\org.eclipse.jdt.core
+760091825.index
+1865797976.index
+2011830981.index

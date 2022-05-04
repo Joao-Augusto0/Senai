@@ -1,0 +1,22 @@
+package visao;
+
+import java.util.Scanner;
+import modelo.Nota;
+import modelo.Aluno;
+
+public class Principal {
+	private static Scanner leia;
+	
+	private int alunos[] = new int[10];
+	
+	private int menu;
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+	}
+
+}

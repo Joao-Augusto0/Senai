@@ -1,0 +1,12 @@
+package visao;
+
+import controle.UsuarioProcessa;
+
+public class TesteConsole {
+
+	public static void main(String[] args) {
+
+		UsuarioProcessa.carregar();
+	}
+
+}

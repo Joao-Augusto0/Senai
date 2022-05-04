@@ -1,0 +1,64 @@
+package javamodelo;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Lista nm = new Lista();
+		
+		Scanner leia = new Scanner(System.in);
+
+		int opcao = 0;
+		
+		do {
+			System.out.println("1-soma!");
+			System.out.println("2-mult!");
+			System.out.println("3-subtração");
+			System.out.println("4-divi!");
+			System.out.println("5-sair");
+			
+			opcao = leia.nextInt();
+			
+			switch(opcao) {
+			case 1:
+				System.out.println("digite um numero:");
+				Double n1 = leia.nextDouble();
+				System.out.println("digite algum texto");
+				Double n2 = leia.nextDouble();
+				
+				Double Soma = n1 + n2;
+			
+			Double ssoma = Soma;
+			
+			nm.lista(ssoma,"soma");
+			
+			break;
+			case 2:
+				System.out.println("digite o titulo:");
+				Double n3 = leia.nextDouble();
+				System.out.println("digite algum texto");
+				Double n4 = leia.nextDouble();
+				
+				Double sub = n3 - n4;
+			
+			Double ssub = sub;
+			
+			nm.lista(ssub,"soma");
+			
+						
+			case 3:
+				
+				break;
+				
+			case 4:	
+			default:
+				System.out.println("ain");
+				break;
+		}
+		
+	}while(opcao != 0);
+	
+}
+}

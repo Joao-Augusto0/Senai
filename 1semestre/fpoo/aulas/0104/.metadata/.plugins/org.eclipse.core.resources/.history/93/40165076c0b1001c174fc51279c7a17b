@@ -1,0 +1,19 @@
+package modelo;
+
+public class Gato extends Animal{
+
+	private int qtdVidas = 7;
+	
+	public Gato(int qtdVidas) {
+		super(especie,nome,peso,raça);
+		this.qtdVidas=qtdVidas;
+	}
+
+	public String toString() {
+		return "Gato [qtdVidas=" + qtdVidas + ", toString()=" + super.toString() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + super.toString() + "]";
+	}
+	
+	
+}
+

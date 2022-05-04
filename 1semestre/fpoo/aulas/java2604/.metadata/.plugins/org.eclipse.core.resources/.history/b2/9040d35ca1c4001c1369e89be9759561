@@ -1,0 +1,106 @@
+package solucao;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Principal {
+	
+	
+	
+	//espaço de entrada 
+	static BufferedReader br;
+	static BufferedWriter bw;
+	
+	//endereço do arquivo
+	
+	static String entrada =  "C:\\Users\\DESENVOLVIMENTO\\Desktop\\atividade java\\solucao\\entrada.csv";
+	static String saida =  "C:\\Users\\DESENVOLVIMENTO\\Desktop\\atividade java\\solucao\\entrada.csv";
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		int menu = 0;
+		int opcao = 0;
+		
+	
+		
+		do {
+			System.out.println("1-soma!");
+			System.out.println("2-mult!");
+			System.out.println("3-subtração");
+			System.out.println("4-divi!");
+			System.out.println("5-sair");
+			opcao = leia.nextInt();
+			
+			switch(menu) {
+			case 1:
+				opcao = 1;
+			break;
+			
+			case 2:
+				opcao = 2;		
+				break;
+			case 3:
+				opcao = 3;
+				break;
+				
+			case 4:	
+				opcao = 4;
+			default:
+			
+				break;
+		}
+		
+	}while(menu != 0);
+		
+		//abre o arquivo tratando os possiveis erros
+		
+		try {
+			
+			//abre o arquivo
+			
+		br = new BufferedReader(new FileReader(entrada));
+		bw = new BufferedWriter(new FileWriter(saida,false));
+		String linha = br.readLine();
+		
+		while(linha != null) {
+			String[] cep = linha.split(";");
+			int v1 = Integer.parseInt(cep[0]);
+			int v2 = Integer.parseInt(cep[1]);
+			int result = 0;
+			
+			if(opcao == 1) {
+			
+			result = v1 + v2;
+			
+			}else if(opcao == 2){
+			result = v1 * v2;
+			
+			}else if(opcao == 3) {
+				result = v1 - v2;	
+				
+			}else if(opcao == 4) {
+				result = v1 / v2;
+				
+			}
+			System.out.println(result);
+			linha = br.readLine();
+			bw.write(result+"\n");
+		}
+		
+		//fecha o arquivo
+		br.close();
+		bw.close();
+		}catch(FileNotFoundException e) {
+			e.printStackTrace();
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

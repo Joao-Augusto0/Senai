@@ -1,0 +1,22 @@
+package modelo;
+
+import java.util.Scanner;
+
+public class Ex04 {
+	public static Scanner leia;
+
+	public static void main(String[] args) {
+		leia = new Scanner(System.in);
+		
+		int v = 900;
+		float d, t;
+		
+		System.out.print("digite a distancia há ser percorrida em km:");
+		d = leia.nextFloat();
+		
+		t = d / v;
+
+		System.out.printf("sera necessario: %.2f",t," horas para o 747-300 sobrevoar %.2f ",d,"km");
+	}	
+	
+}

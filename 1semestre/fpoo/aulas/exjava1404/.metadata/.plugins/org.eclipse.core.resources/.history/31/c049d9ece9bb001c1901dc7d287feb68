@@ -1,0 +1,47 @@
+package modelo;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		
+//		try {
+//			FileWriter fw = new FileWriter("base.txt");
+//			BufferedWriter bw = new BufferedWriter(fw);
+//			
+//			bw.write("meu primeiro arquivo.");
+//			
+//			bw.close();
+//			fw.close();
+//			
+//		} catch (Exception e) {
+//			System.out.println(e.toString());
+//		}
+		
+		try {
+			FileReader fr = new FileReader("base.txt");
+			BufferedReader br = new BufferedReader(fr);
+			
+			String linha = "";
+		
+			while( (linha = br.readLine()) != null) {
+				System.out.println(linha);
+			}
+		
+		br.close();
+		fr.close();
+		
+	}catch (FileNotFoundException e) {
+		System.out.println(e.toString());
+	}catch (IOException e) {
+		System.out.println(e.toString());
+	}
+		
+	}
+}

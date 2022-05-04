@@ -1,0 +1,14 @@
+package modelo;
+
+public class Ex10 {
+
+	public static void main(String[] args) {
+
+			
+		float  q = 0,reais;
+				
+		reais = (130/10) * q;
+				
+		System.out.printf("o valor dos ngc é: %2.f",reais);
+		}
+}

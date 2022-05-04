@@ -1,0 +1,32 @@
+package aula14;
+
+import java.util.Scanner;
+
+public class Ex3 {
+	public static Scanner leia;
+	public static void main(String[] args) {
+		leia = new Scanner(System.in);
+	
+		int cont = 1;
+		int m= 0;
+		int sm=0;
+		int n = leia.nextInt();
+		
+		
+		while (cont < 10) {
+			cont++;
+		
+		
+		if(n > m) {
+			sm = n;
+			m = n;
+		}
+		if(n < m && n > sm) {
+			sm = n;
+		}
+		for(int i = 0; i < 10; i++) {
+		}
+		}
+	}
+
+}

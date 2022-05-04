@@ -1,0 +1,15 @@
+package modelo;
+
+public class Pet {
+
+	int id1
+	String especie1
+	String raça1
+	String nome1
+	Float peso1
+	Date nascimento1
+	String dono1
+	int telefone1
+	String texto1
+	rotulos
+}

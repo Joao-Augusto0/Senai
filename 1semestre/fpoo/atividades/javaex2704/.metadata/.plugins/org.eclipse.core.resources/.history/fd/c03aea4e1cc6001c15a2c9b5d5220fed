@@ -1,0 +1,9 @@
+package controle;
+
+import java.io.IOException;
+
+public class Processa {
+	
+	static ArrayList<Pessoa> linhas = new ArrayList<>();
+
+}

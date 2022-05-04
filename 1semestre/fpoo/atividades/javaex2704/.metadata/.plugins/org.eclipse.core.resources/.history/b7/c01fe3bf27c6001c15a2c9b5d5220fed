@@ -1,0 +1,17 @@
+package modelo;
+
+public class Alunos {
+
+	private String nome;
+	private int ano;
+	
+	public Alunos(String entrada) {
+		nome = (entrada.split(";")[0]);
+		ano = Integer.parseInt(entrada.split(";")[1]);
+	}
+	
+	public String toString() {
+		int idade = 2022 - ano;
+		return nome + ";" + idade;
+	}
+}

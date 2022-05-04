@@ -1,0 +1,24 @@
+package controle;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Processa {
+	
+	static ArrayList<Pessoas> linhas = new ArrayList<>();
+
+	private static DAO dao = new DAO();
+	
+	public static void carregar() {
+		linhas = dao.abrir();
+	}
+	
+	public static void saida(int opcao) {
+		switch(opcao) {
+		case 1:dao.salvarname(linhas);
+		break;
+		case 2:dao.salvardata(linhas);
+		break;	
+		}
+	}
+}

@@ -1,0 +1,29 @@
+package modelo;
+
+import java.util.Scanner;
+
+public class Ex05 {
+	public static Scanner leia;
+	
+	public static void main(String[] args) {
+		leia = new Scanner(System.in);
+		
+		int caminhaoT = 18;
+		float alqueire,caminhao,produz,carga,viagem;
+		
+		
+		System.out.print("quantos caminhões tem em sua fazendo?:");
+		caminhao = leia.nextFloat();
+		System.out.print("quantos alqueires tem um sua fazenda?:");
+		alqueire = leia.nextFloat();
+		
+		produz = alqueire * 250;
+		carga = produz / caminhao;
+		viagem = carga /caminhaoT;
+				
+		System.out.printf("vc tera que fazer:");
+		System.out.print(Math.round(viagem));
+		System.out.printf("viagens!");
+
+	}
+}

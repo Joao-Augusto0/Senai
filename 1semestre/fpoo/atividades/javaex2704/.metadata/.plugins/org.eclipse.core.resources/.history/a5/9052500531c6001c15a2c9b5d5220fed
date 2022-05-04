@@ -1,0 +1,23 @@
+package modelo;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Aleatorio {
+
+	Random random = new Random();
+
+	
+	public Aleatorio(String entrada) {
+		
+		int numero = random.nextInt(10);
+		for{
+			
+		}
+		
+	}
+	
+	public String toString() {
+		
+	}
+}

@@ -1,0 +1,210 @@
+package visao;
+import java.awt.Color; 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.ParseException;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+import controle.PetPreocess;
+import modelo.Pet;
+
+public class Petform extends JFrame implements ActionListener{
+
+	private static final long serialVersionUID = 1L;
+	private JPanel painel;
+	private JLabel id1, especie1,raça1,nome1,peso1,nascimento1,dono1,telefone1,texto1, rotulos;
+	private JTextField Id, Raça,Nome,Peso,Nascimento,Dono,Telefone;
+	private JTextArea texto;
+	JComboBox<String> Especie;
+	private JButton Cadastrar,Buscar,Alterar,Excluir;
+	private String texto2 = "";
+	private JTextArea verResultados;
+
+	
+	private String imgIcon = "C:\\Users\\DESENVOLVIMENTO\\Desktop\\atividade java 0205\\exjava\\pets\\src\\img\\panda.jpg";
+
+	private ImageIcon icon;
+	private JLabel img;
+	private int autoId = 1;
+
+	
+	Petform(){
+		setTitle("Formulario de Pets");
+		setBounds(600,300,580,540);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		painel = new JPanel();
+		setContentPane(painel);
+		setLayout(null);
+		
+		img = new JLabel(new ImageIcon("C:\\Users\\DESENVOLVIMENTO\\Desktop\\atividade java 0205\\exjava\\pets\\src\\img\\panda.jpg"));
+		img.setBounds(340,180,200,150);
+		img.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
+		
+		
+		id1 = new JLabel("id");
+		id1.setBounds(20,20,100,20);
+		Id = new JTextField(String.format("%d", autoId));
+		Id.setEditable(false);
+		Id.setBounds(120,20,200,30);
+		
+		especie1 = new JLabel("Especie");
+		especie1.setBounds(20,60,100,20);
+		Especie = new JComboBox<String>(new String[] {"Cachorro", "Gato", "Coelho", "Outro" });
+		Especie.setBounds(120,60,200,30);
+		
+		raça1 = new JLabel("Raça");
+		raça1.setBounds(20,100,100,20);
+		Raça = new JTextField();
+		Raça.setBounds(120,100,200,30);
+		
+		nome1 = new JLabel("Nome");
+		nome1.setBounds(20,140,100,20);
+		Nome = new JTextField();
+		Nome.setBounds(120,140,200,30);
+		
+		peso1 = new JLabel("Peso");
+		peso1.setBounds(20,180,100,20);
+		Peso = new JTextField();
+		Peso.setBounds(120,180,200,30);
+		
+		nascimento1 = new JLabel("Nascimento");
+		nascimento1.setBounds(20,220,100,20);
+		Nascimento = new JTextField();
+		Nascimento.setBounds(120,220,200,30);
+		
+		dono1 = new JLabel("Dono");
+		dono1.setBounds(20,260,100,20);
+		Dono = new JTextField();
+		Dono.setBounds(120,260,200,30);
+		
+		telefone1 = new JLabel("Telefone");
+		telefone1.setBounds(20,300,100,20);
+		Telefone = new JTextField();
+		Telefone.setBounds(120,300,200,30);
+		
+		rotulos = new JLabel("Id:     Esp�cie:       Pet:        Peso:       Idade:       Dono:        Telefone:");
+		rotulos.setBounds(20, 350, 400, 30);
+		
+		
+		texto1 = new JLabel();
+		texto1.setBounds(20,400,100,20);
+		texto  = new JTextArea();
+		texto .setEnabled(false);
+		texto .setBounds(120,380,400,110);
+		texto .setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
+		
+		
+		Cadastrar = new JButton("cadastrar");
+		Cadastrar.setBounds(330,20,200,30);
+		
+		Buscar = new JButton("buscar");
+		Buscar.setBounds(330,60,200,30);
+		
+		Alterar = new JButton("alterar");
+		Alterar.setBounds(330,100,200,30);
+		
+		Excluir = new JButton("excluir");
+		Excluir.setBounds(330,140,200,30);
+		
+		
+		painel.add(id1);
+		painel.add(Id);
+		painel.add(especie1);
+		painel.add(Especie);
+		painel.add(raça1);
+		painel.add(Raça);
+		painel.add(nome1);
+		painel.add(Nome);
+		painel.add(peso1);
+		painel.add(Peso);
+		painel.add(nascimento1);
+		painel.add(Nascimento);
+		painel.add(dono1);
+		painel.add(Dono);
+		painel.add(telefone1);
+		painel.add(Telefone);
+		painel.add(texto1);
+		painel.add(texto);
+		painel.add(Cadastrar);
+		painel.add(Buscar);
+		painel.add(Alterar);
+		painel.add(Excluir);
+		painel.add(img);	
+		painel.add(rotulos);
+		
+		Especie.addActionListener(this);
+		Cadastrar.addActionListener(this);
+		Buscar.addActionListener(this);
+		Alterar.addActionListener(this);
+		Excluir.addActionListener(this);
+	}
+	
+
+	private void preencher() {
+		texto2 = "";
+		for (Pet p: PetPreocess.pets) {
+			texto2 += p.toString();
+		}
+		verResultados.setText(texto2);
+	}
+	
+	private void cadastrar() {
+		if(raça1.getText().length() != 0 && nome1.getText().length() != 0 && peso1.getText().length() != 0 && nascimento1.getText().length() != 0  && dono1.getText().length() != 0 && telefone1.getText().length() != 0) {
+			PetPreocess.pets.add(new Pet(autoId,Especie.getSelectedItem().toString(),Raça.getText(),Nome.getText(),Float.parseFloat(Peso.getText()),Nascimento.getText(),Dono.getText(),Telefone.getText()));
+			autoId++;
+			limparCampos();
+			
+		}else {
+			JOptionPane.showMessageDialog(this,"favor preencher todos os campos");
+		}
+	}
+	
+	private void limparCampos() {
+		Nome.setText(null);
+		Raça.setText(null);
+		Peso.setText(null);
+		Nascimento.setText(null);
+		Dono.setText(null);
+		Telefone.setText(null);
+	}
+	
+	
+	public static void main(String[] args) throws ParseException {
+		PetPreocess.carregarTestes();
+		new Petform().setVisible(true);
+	}
+
+	
+
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == Especie) {
+			//alternarImagens(Especie.getSelectedIndex());
+		}
+		
+		if(e.getSource() == Cadastrar) {
+			cadastrar();
+			
+		}
+		
+		if(e.getSource() == Buscar) {
+			
+		}
+		
+		if(e.getSource() == Alterar) {
+	
+		}
+		
+		if(e.getSource() == Excluir) {
+	
+		}
+	}	
+}
