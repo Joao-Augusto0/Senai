@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-2 bg-primary">
+                <h1 class="text-success">COLUNA 1</h1>
+            </div>
+            <div class="col-12 col-md-8 bg-warning">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="text" id="email" class="form-control" placeholder="Informe seu email">
+
+                <select class="form-select">
+                    <option value="">Valor 1</option>
+                    <option value="">Valor 2</option>
+                    <option value="">Valor 3</option>
+                </select>
+
+                <div class="form-check">
+                    <input type="checkbox" id="valor 1" class="form-check-input">
+                    <label for="valor 1" class="form-check-label">Valor 1</label>
+                </div>
+                <form class="needs-validation was-validated" novalidate>
+                    <div class="col-5">
+                        <label for="nome" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Informe o nome completo" required>
+                        <div class="invalid-feedback">
+                            Campo nome obrigatorio!
+                        </div>
+                        <div class="valid-feedback">
+                            Parabens!
+                        </div>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+                                Quais são os breakpoints do bootstrap
+                            </button>
+                        </h2>
+                        <div id="q1" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Classe do bootstrap</th>
+                                            <th>Largura em px</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>none</td>
+                                            <td><576</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sm</td>
+                                            <td>>=576</td>
+                                        </tr>
+                                        <tr>
+                                            <td>md</td>
+                                            <td>>=768</td>
+                                        </tr>
+                                        <tr>
+                                            <td>lg</td>
+                                            <td>>=992</td>
+                                        </tr>
+                                        <tr>
+                                            <td>xl</td>
+                                            <td>>=1200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>xxl</td>
+                                            <td>>=1400</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accondion-header">
+                            <button class="accordion-button">
+                                para que serve a propriedade data-bs-target?
+                            </button>
+                        </h2>
+                        <div id="q2" class="accordion-colapser collapse">
+                            <div accodion-body>
+                                <p>desetino a ser alterado de acordo com ação do boostrap</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-tagle="collapse" data-bs-target="q3">
+                                quais os links para importat o bootstrap
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="q3" class="accordion-colapse colapse">
+                        <div class="accordion body">
+                            <p>
+                                <p>link do css</p>
+                                <p>https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor</p>
+                            </p>
+                            <p>
+                                <p>link do js</p>
+                                <p>https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-md-2 bg-danger">
+                COLUNA 3
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

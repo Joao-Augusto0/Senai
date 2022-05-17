@@ -11,4 +11,5 @@
     <fullyQualifiedTypeName name="controle.PetPreocess"/>
     <fullyQualifiedTypeName name="modelo.Pet"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
 </qualifiedTypeNameHistroy>
