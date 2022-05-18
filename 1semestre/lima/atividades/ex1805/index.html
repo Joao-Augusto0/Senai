@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-8 col-md-12 bg-danger">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">fiat</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">chevrolet</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Volkswagen</a>
+                </li>
+              </ul>
+            <label for="email" class="form-label">pesquise a marca</label>
+            <input type="text" id="email" class="form-control" placeholder="digite a marca do carro">
+            <select class="form-select">
+                <option value="">fiat</option>
+                <option value="">chevrolet</option>
+                <option value="">wolksvagem</option>
+            </select>
+
+            <div id="frutaiada" class="carousel slide text-align center" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#frutaiada" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#frutaiada" data-bs-slide-to="1" aria-current="true" class="active"></button>
+                    <button type="button" data-bs-target="#frutaiada" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.motor1.com/images/mgl/PO9Y4/s1/fiat-363-suvfiat.jpg" alt="">
+                    </div>
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://cdn.motor1.com/images/mgl/b2GXr/s1/chevrolet-onix-premier-2020.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://mundodoautomovelparapcd.com.br/wp-content/uploads/2020/09/Volkswagen-Gol-2021-18.jpg" alt="">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#frutaiada" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Voltar</span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#frutaiada" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Proximo</span>
+                </button>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.motor1.com/images/mgl/Vo13B/s1/4x3/fiat-uno-attractive.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Fiat uno</h5>
+                            <p class="card-text">Altura: 1.525 mm.
+                                Largura: 1.695 mm.
+                                Comprimento: 3.941 mm.
+                                Peso: 1.033 kg.
+                                Tanque: 51 L</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data:image/jpeg;base64,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" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">chevrolet onix</h5>
+                            <p class="card-text">as versões, 1.0 e LT 1.0, o motor será o novo três cilindros 1.0 de 82 cv e 10,6 mkgf quando com etanol (contra os 80 cv e 9,8 mkgf do antigo 1.0 de quatrocilindros)
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            
+            
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn.motor1.com/images/mgl/1ZzLBX/s1/vw-gol-argentino00.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Volkswagen Gol</h5>
+                    <p class="card-text">Seu Gol pode ser equipado com o motor 1.0l MPI de três cilindros Total Flex que proporciona um desempenho surpreendente com economia de combustível e eficiência energética para um modelo dessa cilindrada.</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div> -->
+
+          </div>
+          
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
