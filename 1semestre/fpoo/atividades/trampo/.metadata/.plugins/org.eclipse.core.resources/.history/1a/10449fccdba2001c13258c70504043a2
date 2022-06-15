@@ -1,0 +1,18 @@
+package modelo;
+
+import java.util.Arrays;
+
+public class Aprendizado {
+	public static void main(String[] args) {
+		
+	int d[] = {3,3,4,10,6,7,1};
+	
+	int pos = Arrays.binarySearch(d,1);
+	for(int v:d) {
+		System.out.print(v);
+	}
+	
+	System.out.println(pos);
+	
+	}
+}

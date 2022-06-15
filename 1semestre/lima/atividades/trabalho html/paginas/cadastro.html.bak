@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Pagina de cadastro</title>
+    <meta charset="utf-8">
+  
+	<link rel="stylesheet" href="../css/css.css"/>
+
+  </head>
+  
+  <body>
+  
+		<form>
+		<label><font color="white"> Nome:</font></label>
+				<input type="text"/></br>
+				
+		<label><font color="white"> Senha:</font></label>
+				<input type="password" value="senha"/></br>
+		
+		<label><font color="white"> Email:</font></label>
+				<input type="gmail"/></br>
+		
+		<label><font color="white"> Data:</font></label>
+				<input type="date"/></br>
+				
+		<label><font color="white"> Idade</font></label>
+				<input type="number"/></br>
+
+<p>
+		<h4><label><font>color="white">Ir para tabela</font</label><a href="../paginas/tabela.html"><input type="button">
+	</p>
+
+	
+	</body>	
+
+		</form>

@@ -1,0 +1,18 @@
+package modelo;
+
+import java.util.Arrays;
+
+public class Aprendizado {
+	public static void main(String[] args) {
+	int d[] = {1,2,3,4,5,6,7,};
+		
+	Arrays.sort(d);
+	
+	for(int v:d) {
+		System.out.print(v);
+	}
+	
+	
+	
+	}
+}

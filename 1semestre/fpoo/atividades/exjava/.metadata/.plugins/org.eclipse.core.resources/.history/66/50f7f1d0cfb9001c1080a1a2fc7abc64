@@ -1,0 +1,18 @@
+package modelo;
+
+import java.util.Date;
+
+public class Cliente {
+
+	
+	private int id;
+	private double creditoLimite;
+	
+	public static void Cliente(){
+		
+	}
+	
+	public static void Cliente(int id,double creditoLimite,String nome,String telefone, Date nascimento) {
+		
+	}
+}

@@ -1,0 +1,20 @@
+package modelo;
+
+import java.util.Date;
+
+public class Funcionário {
+	
+	private int matricula;
+	private double comissao;
+
+public static void Funcionario() {
+		 
+}
+
+public static void Funcionario(int matricula, double comissao, String nome,String telefone,Date nascimento) {
+	
+
+}
+}
+
+

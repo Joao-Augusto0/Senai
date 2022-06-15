@@ -1,0 +1,19 @@
+css
+
+body{
+			background-image: url("../imagem/img3.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		label{
+			color: rgb(255,255,255);
+			font-size: 30px;
+			}
+			
+			.class{
+				font-weight: bolder;
+				  }
+			
+			#id{
+				font-size:40px
+			   }
