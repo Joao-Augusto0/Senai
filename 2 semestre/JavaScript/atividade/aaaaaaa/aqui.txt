@@ -1,0 +1,95 @@
+function validarPlaca(placa) {
+    if (placa.length == 7) {
+        if (isNaN(placa[0]) && isNaN(placa[1]) && isNaN(placa[2])) {
+            if (isNaN(placa[3]) == false && (isNaN(placa[4]) == false || isNaN(placa[4]) == true) && isNaN(placa[5]) == false && isNaN(placa[6]) == false) {
+                console.log("placa valida")
+            } else {
+                console.log("placa invalida")
+            }
+        } else {
+            console.log("placa invalida")
+        }
+    } else {
+        console.log("Placa Inválida por Exceder o Limite de Caracteres")
+    }
+}
+//validarPlaca("ABC1212")
+
+
+function validaCPF(cpf) {
+
+    let mult
+    let soma = 0
+    let indice = 0
+    let resto
+
+    //primeira conta
+    if (cpf.length == 11) {
+        for (let i = 10; i >= 2; i--) {
+            mult = i * cpf[indice]
+            soma += mult
+            indice++
+        }
+        resto = (soma * 10) % 11
+
+        if (resto == 10 || resto == 11) {
+            resto = 0
+        }
+        if (resto != cpf[9]) {
+            //console.log("Cpf invalido")
+            return false
+        } else {
+            //segunda conta
+            indice = 0
+            soma = 0
+            for (let i = 11; i >= 2; i--) {
+                mult = i * cpf[indice]
+                soma += mult
+                indice++
+            }
+            resto = (soma * 10) % 11
+            if (resto == cpf[10]) {
+                //console.log("Cpf valido")
+                return true
+            } else {
+                //console.log("Cpf invalido")
+                return false
+            }
+        }
+    } else {
+        return false
+        //console.log("tamanho do cpf excedido")
+    }
+
+}
+
+
+
+function gerarTelefones(ddd, quantidade) {
+    for (let i = quantidade; i > 0; i--) {
+        let phone = `${ddd}-${Math.floor(Math.random() * (99999 - 11111 + 1)) + 11111}-${Math.floor(Math.random() * (9999 - 1111 + 1)) + 1111}`
+        console.log(phone)
+    }
+
+}
+
+//gerarTelefones(19,3)
+
+
+
+function gerarCPF(quantidade) {
+    let indice = 0
+    var cpfs = []
+
+    while (indice != quantidade) {
+        let cpfGerado = Math.floor(Math.random() * (99999999999 - 00000000000 + 1) + 00000000000).toString()
+        if(validaCPF(cpfGerado)){
+            cpfs.push(cpfGerado)
+            indice++
+            console.log(cpfGerado)
+        }
+    }
+
+}
+gerarCPF(10)
+
