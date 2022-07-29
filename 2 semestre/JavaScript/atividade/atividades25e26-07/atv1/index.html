@@ -1,4 +1,5 @@
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,33 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Lista 1 - Exercícios</title>
 </head>
+
 <body>
     <main>
         <div class="container">
             <label>Digite a placa de um veículo:</label>
-            <input type="text" placeholder="Placa"/>
+            <input type="text" placeholder="Placa" id="input" />
             <button id="button">Validar</button>
-            <textarea id="placaRes" cols="30" rows="2"></textarea>
+            <textarea id="Res" cols="30" rows="2"></textarea>
         </div>
         <div class="container">
             <label>Digite CPF:</label>
-            <input type="text" placeholder="CPF"/>
-            <button>Validar</button>
-            <textarea id="cpfRes" cols="30" rows="2"></textarea>
+        <input type="text" placeholder="CPF" id="inputCpf"/>
+            <button id="buttonCpf">Validar</button>
+            <textarea id="ResCpf" cols="30" rows="2"></textarea>
         </div>
         <div class="container">
             <label>Digite quantos números de telefone deseja criar:</label>
-            <input type="number" placeholder="0"/>
+            <input type="number" placeholder="0" />
             <button>Criar</button>
             <textarea id="telefones" cols="30" rows="10"></textarea>
         </div>
         <div class="container">
             <label>Digite quantos CPFs deseja criar:</label>
-            <input type="number" placeholder="0"/>
+            <input type="number" placeholder="0" />
             <button>Criar</button>
             <textarea id="cpfs" cols="30" rows="10"></textarea>
         </div>
     </main>
 </body>
 <script src="script.js"></script>
+
 </html>
